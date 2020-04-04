@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('/assets/fonts/PTSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('/assets/fonts/PTSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@mixin Gilroy() {
+  font-family: 'Gilroy';
+}
+
+@mixin PTSans-bold() {
+  font-family: 'PTSans-Bold';
+}
+

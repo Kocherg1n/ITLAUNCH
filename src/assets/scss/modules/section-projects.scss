@@ -1,0 +1,35 @@
+.projects {
+
+
+  &__box {
+    border: 1px solid #E0E0E0;
+    box-shadow: 10px 10px 20px #E0E0E0;
+    border-radius: 20px;
+    padding: 24px;
+    margin-top: 48px;
+  }
+
+  &__names {
+
+  }
+
+  &__names-row {
+    display: flex;
+    margin-top: 28px;
+    font-size: rem(18);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__name {
+    margin-right: rem(48);
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      border-bottom: 3px solid #8484FC;
+      transition: .2s;
+    }
+  }
+}

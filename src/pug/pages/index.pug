@@ -1,13 +1,15 @@
-include ../utils/mixins
-
 doctype html
 html(lang='ru')
   head
     meta(charset='utf-8')
     title it-launch
     meta(name="description", content='it-launch')
-
-  body(class=pageClass)
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  body
     .wrapper
       include ../includes/modules/header
+      include ../includes/modules/section-about
+      include ../includes/modules/section-features
+      include ../includes/modules/section-benefit
+      include ../includes/modules/section-projects
 

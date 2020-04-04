@@ -1,0 +1,29 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 25px;
+  z-index: 10;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: rem(48);
+    padding-bottom: 32px;
+  }
+
+  &__menu {
+    flex: 1;
+  }
+
+  &__phone {
+    font-weight: 700;
+  }
+
+  &__phone-numb {
+    color: #ffffff;
+  }
+}

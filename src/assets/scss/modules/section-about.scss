@@ -1,0 +1,82 @@
+// Секция "Главная"
+
+.about {
+  height: 100vh;
+  padding-top: 170px;
+  position: relative;
+  //clip-path: ellipse(33% 99% at 90% 32%);
+
+  //&__bg {
+  //  background-image: url("/assets/img/about.jpeg");
+  //  background-size: cover;
+  //  position: absolute;
+  //  height: 850px;
+  //  width: 1100px;
+  //  right: -250px;
+  //}
+
+  &__title {
+    font-size: rem(80);
+    color: black;
+    @include Gilroy;
+  }
+
+  &__description {
+    padding-right: 50%;
+    margin-top: 20px;
+  }
+
+  &__description-text {
+    font-size: rem(24);
+    font-weight: 700;
+  }
+
+  &__btn {
+    margin-top: 16px;
+  }
+
+  &__button {
+    @include PTSans-bold;
+    font-size: rem(18);
+    padding: 12px 55px;
+    background-color: #1F51EE;
+    border-radius: 30px;
+    color: #fff;
+  }
+
+  &__button-link {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  // images (rocket)
+
+  &__sky {
+    position: absolute;
+    left: 0;
+    top: 470px;
+    z-index: 10;
+  }
+
+  &__line {
+    position: absolute;
+    left: 30px;
+    top: 610px;
+  }
+
+  &__rocket {
+    position: absolute;
+    left: 130px;
+    top: 580px;
+    z-index: 10;
+  }
+
+  &__stars {
+    position: absolute;
+    left: 200px;
+    top: 540px;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,75 @@
+// Секция "Почему с нами стоит сотрудничать"
+
+.features {
+  padding-bottom: 70px;
+
+  &__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 25px 25px 25px 25px;
+    width: 245px;
+    min-height: 308px;
+    border-radius: 20px;
+    justify-content: space-between;
+    border: 1px solid #E0E0E0;
+    z-index: 10;
+    //display: flex;
+    //flex-direction: column;
+
+    &:nth-child(1) {
+      background-color: #35305A;
+      color: #ffffff;
+      box-shadow: 10px 10px 20px rgba(53, 48, 90, 0.5);
+    }
+
+    &:nth-child(2) {
+      box-shadow: 10px 10px 20px rgba(187, 107, 217, 0.5);
+    }
+
+    &:nth-child(3) {
+      box-shadow: 10px 10px 20px rgba(78, 149, 253, 0.5);
+    }
+
+    &:nth-child(4) {
+      box-shadow: 10px 10px 20px rgba(242, 153, 74, 0.5);
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: rem(18);
+    margin-bottom: 35px;
+  }
+
+  &__item-icon-box {
+    margin-bottom: 35px;
+    position: relative;
+  }
+
+  &__item-desc {
+
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+  }
+
+  // icons
+
+  &__item-icon-bg {
+    //position: absolute;
+  }
+
+  &__item-icon {
+    position: absolute;
+    left: 0;
+  }
+}

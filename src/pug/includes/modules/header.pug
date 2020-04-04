@@ -1,2 +1,9 @@
 header.header
-	h1 TITLE
+	.container
+		.header__container
+			.header__logo
+				img(src='/assets/img/logo.svg').logo__pic
+			.header__menu
+				include ./nav
+			.header__phone
+				a(href='tel: 8 (965) 018-84-00').header__phone-numb 8 (965) 018-84-00

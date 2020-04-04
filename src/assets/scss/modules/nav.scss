@@ -1,0 +1,17 @@
+// Навигация
+
+.nav {
+
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: rem(24);
+  }
+
+  &__link {
+    font-size: rem(18);
+  }
+}
