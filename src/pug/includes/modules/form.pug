@@ -1,0 +1,17 @@
+form.form
+	.form__row
+		label.form__label.form__row
+			.form__name Как к Вам обращаться?
+			input.form__input(type='text' name='name' placeholder='Введите имя' required)
+	.form__row
+		label.form__label.form__row
+			.form__name На какой номер можно позвонить?
+			input.form__input(type='text' name='phone' placeholder='8 (888) 888-88-88' required)
+	.form__row
+		label.form__label.form__row
+			.form__name На какой номер можно позвонить?
+			textarea(name='review' placeholder='Например: Какую рекламную кампанию мне лучше использовать для моего бизнесса? ').form__textarea
+	.form__row
+		button(type='submit').form__button Получить консультацию
+	.form__dots-blue
+		img(src='/assets/img/dots-blue.svg')

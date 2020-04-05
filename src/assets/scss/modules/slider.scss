@@ -1,0 +1,136 @@
+.slider {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    font-size: rem(24);
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: -30px;
+    text-decoration: underline;
+    font-size: rem(18);
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-right: 25px;
+    position: relative;
+  }
+
+  &__description-question {
+    font-size: rem(18);
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+    &:before {
+      content: url("/assets/img/icons/head1.svg");
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+  }
+
+  &__description-question-text {
+    margin-bottom: 17px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__description-answer {
+    font-size: rem(18);
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+    &:before {
+      content: url("/assets/img/icons/head.svg");
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+  }
+
+  &__picture {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 450px;
+    margin-right: 25px;
+  }
+
+  &__picture-title {
+    color: #fff;
+    font-size: rem(24px);
+    font-weight: 700;
+    top: 24px;
+    left: 24px;
+    position: absolute;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  &__button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    border: 1px solid #6A55E5;
+    border-radius: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button-next {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__button-prev {
+    position: absolute;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  // active-class-btns
+
+  .slider--active {
+    background-color: #8484FC;
+    color: #fff;
+  }
+}

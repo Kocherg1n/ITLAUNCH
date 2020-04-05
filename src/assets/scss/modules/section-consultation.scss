@@ -1,0 +1,19 @@
+.consultation {
+  padding-bottom: 102px;
+
+  &__content {
+    display: flex;
+    padding-top: 47px
+  }
+
+  &__form {
+    flex: 1;
+    margin-right: 50px;
+  }
+
+  &__column {
+    background-image: url("/assets/img/consultation.svg");
+    width: 560px;
+    height: 560px;
+  }
+}

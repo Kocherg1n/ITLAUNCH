@@ -1,0 +1,17 @@
+.footer {
+  background-image: url("/assets/img/footer.png");
+  background-size: cover;
+  min-height: 370px;
+  font-size: 18px;
+  color: #fff;
+  padding-top: 270px;
+
+  &__copyright {
+    text-align: center;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+  }
+}
