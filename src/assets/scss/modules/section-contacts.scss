@@ -14,7 +14,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: rem(24);
+    width: 50%;
   }
 
   &__adress span {
@@ -45,7 +46,7 @@
     box-shadow: 10px 10px 20px rgba(53, 48, 90, 0.5);
     position: relative;
     border-radius: 10px;
-    position: relative;
+    width: 48%;
 
     &:after {
       content: url("/assets/img/dots-purple.svg");
@@ -53,6 +54,10 @@
       position: absolute;
       top: -37px;
       right: -37px;
+
+      @include laptop {
+        display: none;
+      }
     }
 
     &:before {
@@ -61,12 +66,16 @@
       position: absolute;
       bottom: -37px;
       left: -37px;
+
+      @include laptop {
+        display: none;
+      }
     }
   }
 
   &__map {
     overflow: hidden;
-    width: 490px;
+    width: 100%;
     border-radius: 10px;
     height: 220px;
     position: relative;

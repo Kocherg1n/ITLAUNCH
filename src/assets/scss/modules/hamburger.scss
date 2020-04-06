@@ -1,0 +1,32 @@
+.hamburger {
+  width: 48px;
+  height: 3px;
+  background-color: #35305A;
+  position: relative;
+  border-radius: 5px;
+
+  &:after {
+    content: '';
+    background-color: #35305A;
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    top: 9px;
+    right: 0;
+    border-radius: 5px;
+  }
+
+  &:before {
+    content: '';
+    background-color: #35305A;
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 3px;
+    bottom: 9px;
+    right: 0;
+    border-radius: 5px;
+  }
+}
+

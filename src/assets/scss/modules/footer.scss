@@ -3,10 +3,10 @@
 .footer {
   background-image: url("/assets/img/footer.png");
   background-size: cover;
-  min-height: 370px;
-  font-size: 18px;
+  min-height: rem(370);
+  font-size: rem(18);
   color: #fff;
-  padding-top: 270px;
+  padding-top: rem(270);
 
   &__copyright {
     text-align: center;

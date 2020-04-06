@@ -15,17 +15,38 @@
   &__logo {
     margin-right: rem(48);
     padding-bottom: 32px;
+
+    @include phone {
+      flex: 1;
+      padding-bottom: 0;
+    }
   }
 
   &__menu {
     flex: 1;
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__phone {
     font-weight: 700;
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__phone-numb {
     color: #ffffff;
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include phone {
+      display: block;
+    }
   }
 }

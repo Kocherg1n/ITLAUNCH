@@ -3,6 +3,18 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
+
+  @include desktop {
+    font-size: 15px;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include phone {
+    font-size: 13px;
+  }
 }
 
 body {
@@ -40,16 +52,30 @@ section, .section {
 
 .container {
   max-width: 1200px;
-  width: 95%;
+  width: 92%;
   margin: 0 auto;
 }
 
 .button, button {
   cursor: pointer;
+  background-color: transparent;
 }
 
 .title {
   @include Gilroy;
   font-weight: 800;
   font-size: 36px;
+
+  @include phone {
+    display: none;
+  }
+
+  &--mobile {
+    display: none;
+
+    @include phone {
+      display: block;
+      font-size: 32px;
+    }
+  }
 }

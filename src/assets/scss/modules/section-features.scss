@@ -3,6 +3,11 @@
 .features {
   padding-bottom: 70px;
 
+  @include phone {
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+
   &__list {
     margin-top: 50px;
     display: flex;
@@ -10,23 +15,42 @@
     position: relative;
     flex-wrap: wrap;
 
+    @include phone {
+      margin-top: 24px;
+    }
+
     &:after {
       content: url("/assets/img/dots-gray.svg");
       display: block;
       position: absolute;
-      bottom: -40px;
+      bottom: -26px;
       left: -40px;
+
+      @include desktop {
+        display: none;
+      }
     }
   }
 
   &__item {
-    padding: 25px 25px 25px 25px;
+    padding: 25px;
     width: 245px;
     min-height: 308px;
     border-radius: 20px;
     justify-content: space-between;
     border: 1px solid #E0E0E0;
     z-index: 10;
+    margin-bottom: 20px;
+
+    @include laptop {
+      width: 49%;
+    }
+
+    @include phone {
+      min-width: 100%;
+      padding: 15px;
+      min-height: 100%;
+    }
 
     &:nth-child(1) {
       background-color: #35305A;
@@ -47,19 +71,44 @@
     }
   }
 
+  &__box {
+    @include phone {
+      display: flex;
+    }
+  }
+
   &__item-title {
     font-weight: 700;
     font-size: rem(18);
     margin-bottom: 35px;
+
+    @include phone {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
   }
 
   &__item-icon-box {
     margin-bottom: 35px;
     position: relative;
+
+    @include phone {
+      margin-bottom: 0;
+    }
   }
 
   &__item-icon {
     position: absolute;
     left: 0;
+  }
+
+  &__item-desc {
+
+
+    @include phone {
+      width: 80%;
+      font-size: 14px;
+      margin-left: 14px;
+    }
   }
 }

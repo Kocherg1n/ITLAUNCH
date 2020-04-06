@@ -5,6 +5,10 @@
   display: flex;
   justify-content: space-between;
 
+  @include laptop {
+    flex-direction: column-reverse;
+  }
+
   &__title {
     font-size: rem(24);
     font-weight: 700;
@@ -20,12 +24,21 @@
     font-size: rem(18);
   }
 
+  &__box {
+    display: flex;
+  }
+
   &__description {
     display: flex;
     flex-direction: column;
     width: 33%;
     margin-right: 25px;
     position: relative;
+
+    @include laptop {
+      width: 100%;
+      padding-top: 30px;
+    }
   }
 
   &__description-question {
@@ -106,6 +119,7 @@
     font-weight: 700;
     border: 1px solid #6A55E5;
     border-radius: 5px;
+    min-width: 280px;
 
     &:last-child {
       margin-bottom: 0;
@@ -120,7 +134,6 @@
   }
 
   &__button-prev {
-    position: absolute;
     position: absolute;
     bottom: -40px;
     left: 50%;

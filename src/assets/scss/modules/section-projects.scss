@@ -18,6 +18,10 @@
       position: absolute;
       bottom: -25px;
       right: -53px;
+
+      @include desktop {
+        display: none;
+      }
     }
 
     &:before {
@@ -26,6 +30,10 @@
       position: absolute;
       bottom: 60px;
       left: -120px;
+
+      @include desktop {
+        display: none;
+      }
     }
   }
 

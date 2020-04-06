@@ -1,9 +1,9 @@
-@import "utils/fonts";
 @import "utils/vars";
-@import "utils/layout";
+@import "utils/fonts";
+@import "utils/media";
 @import "utils/mixins";
+@import "utils/layout";
 @import "utils/reset";
-
 
 
 // Modules
@@ -18,3 +18,4 @@
 @import "modules/form";
 @import "modules/section-contacts";
 @import "modules/footer";
+@import "modules/hamburger";

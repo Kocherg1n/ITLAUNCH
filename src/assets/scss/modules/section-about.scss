@@ -6,6 +6,10 @@
   position: relative;
   //clip-path: ellipse(33% 99% at 90% 32%);
 
+  @include phone {
+    padding-top: 80px;
+  }
+
   //&__bg {
   //  background-image: url("/assets/img/about.jpeg");
   //  background-size: cover;
@@ -25,11 +29,19 @@
   &__description {
     padding-right: 50%;
     margin-top: 20px;
+
+    @include phone {
+      padding-right: 0;
+    }
   }
 
   &__description-text {
     font-size: rem(24);
     font-weight: 700;
+
+    @include phone {
+      font-size: 22px;
+    }
   }
 
   &__btn {
@@ -38,11 +50,17 @@
 
   &__button {
     @include PTSans-bold;
-    font-size: 18px;
+    font-size: rem(18);
     padding: 12px 55px;
     background-color: #1F51EE;
     border-radius: 30px;
     color: #fff;
+
+    @include phone {
+      width: 100%;
+      margin-top: 190px;
+      font-size: 20px;
+    }
   }
 
   &__button-link {
@@ -50,6 +68,10 @@
     bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include phone {
+      display: none;
+    }
   }
 
   // images (rocket)
@@ -59,12 +81,22 @@
     left: 0;
     top: 470px;
     z-index: 10;
+
+    @include phone{
+      left: -28px;
+      top: 340px;
+    }
   }
 
   &__line {
     position: absolute;
     left: 30px;
     top: 610px;
+
+    @include phone{
+      left: -30px;
+      top: 480px;
+    }
   }
 
   &__rocket {
@@ -72,6 +104,11 @@
     left: 130px;
     top: 580px;
     z-index: 10;
+
+    @include phone{
+      left: 60px;
+      top: 445px;
+    }
   }
 
   &__stars {
@@ -79,5 +116,10 @@
     left: 200px;
     top: 540px;
     z-index: 10;
+
+    @include phone{
+      left: 100px;
+      top: 410px;
+    }
   }
 }
