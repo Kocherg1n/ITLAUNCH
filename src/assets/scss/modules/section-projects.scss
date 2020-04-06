@@ -1,3 +1,5 @@
+// В каждом проекте мы решаем конкретную задачу ========== //
+
 .projects {
   padding-bottom: 110px;
 
@@ -8,6 +10,15 @@
     padding: 24px;
     margin-top: 48px;
     position: relative;
+
+    &:after {
+      display: block;
+      content: url("/assets/img/dots-purple.svg");
+      transform: rotate(90deg);
+      position: absolute;
+      bottom: -25px;
+      right: -53px;
+    }
   }
 
   &__names {
@@ -33,13 +44,6 @@
     position: absolute;
     bottom: 60px;
     left: -120px;
-  }
-
-  &__dots-purple {
-    transform: rotate(90deg);
-    position: absolute;
-    bottom: -25px;
-    right: -53px;
   }
 
   // active-class
