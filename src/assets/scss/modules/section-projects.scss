@@ -19,6 +19,14 @@
       bottom: -25px;
       right: -53px;
     }
+
+    &:before {
+      content: url("/assets/img/man.svg");
+      display: block;
+      position: absolute;
+      bottom: 60px;
+      left: -120px;
+    }
   }
 
   &__names {
@@ -38,12 +46,6 @@
   &__name {
     margin-right: rem(48);
     border-bottom: 3px solid transparent;
-  }
-
-  &__man {
-    position: absolute;
-    bottom: 60px;
-    left: -120px;
   }
 
   // active-class
