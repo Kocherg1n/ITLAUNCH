@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: space-between;
     font-size: rem(24);
-    width: 50%;
+    width: 55%;
 
     @include phone {
       width: 100%;
@@ -28,43 +28,114 @@
     }
   }
 
-  &__adress span {
-    font-weight: 700;
+  &__adress {
+    display: flex;
     font-size: 24px;
+    font-weight: 700;
+
+    @include phone {
+      flex-direction: column;
+    }
+
+    &-text {
+      font-weight: 500;
+      margin-left: 15px;
+
+      @include phone {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+    }
   }
 
-  &__phone span {
-    font-weight: 700;
+  &__phone {
+    display: flex;
     font-size: 24px;
+    font-weight: 700;
+
+    @include phone {
+      flex-direction: column;
+    }
+
+    &-num {
+      font-weight: 500;
+      margin-left: 15px;
+
+      @include phone {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+    }
   }
 
-  &__worktime span {
-    font-weight: 700;
+  &__mail {
+    display: flex;
     font-size: 24px;
+    font-weight: 700;
+
+    @include phone {
+      flex-direction: column;
+    }
+
+    &-text {
+      font-weight: 500;
+      margin-left: 15px;
+
+      @include phone {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+    }
   }
 
-  &__mail span {
-    font-weight: 700;
+  &__worktime {
+    display: flex;
     font-size: 24px;
+    font-weight: 700;
+
+    @include phone {
+      flex-direction: column;
+    }
+
+    &-text {
+      font-weight: 500;
+      margin-left: 15px;
+
+      @include phone {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+    }
   }
 
-  &__socials span {
-    font-weight: 700;
+  &__socials {
+    display: flex;
     font-size: 24px;
+    font-weight: 700;
+
+    @include phone {
+      flex-direction: column;
+    }
   }
 
   &__socials-link {
-    margin-right: 4px;
+    margin-left: 15px;
+
+    @include phone {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
   }
 
   &__map-box {
     box-shadow: 10px 10px 20px rgba(53, 48, 90, 0.5);
     position: relative;
     border-radius: 10px;
-    width: 48%;
+    width: 45%;
 
     @include phone {
       width: 100%;
+      margin-top: 30px;
     }
 
     &:after {
@@ -89,6 +160,16 @@
       @include laptop {
         display: none;
       }
+
+      //@include phone {
+      //  content: url("/assets/img/icons/dots-map.svg");
+      //  display: block;
+      //  position: absolute;
+      //  bottom: -37px;
+      //  left: -37px;
+      //  width: 100%;
+      //  height: 100%;
+      //}
     }
   }
 
@@ -108,5 +189,12 @@
 
   &__socials-icon {
     margin-left: 10px;
+
+    @include phone {
+      margin-right: 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 }

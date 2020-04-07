@@ -27,11 +27,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-*, *:before, *:after { box-sizing: border-box; }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 
-a { text-decoration: none; cursor: pointer}
+a {
+  text-decoration: none;
+  cursor: pointer
+}
 
 ul, li {
   margin: 0;
@@ -54,6 +61,7 @@ section, .section {
   max-width: 1200px;
   width: 92%;
   margin: 0 auto;
+
   &--benefit {
     max-width: 1200px;
     width: 92%;

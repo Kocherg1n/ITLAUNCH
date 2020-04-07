@@ -4,16 +4,41 @@
   background-image: url("/assets/img/footer.png");
   background-size: cover;
   min-height: rem(370);
-  font-size: rem(18);
+  font-size: 18px;
   color: #fff;
   padding-top: rem(270);
 
+  @include phone {
+    padding-top: rem(200);
+  }
+
   &__copyright {
     text-align: center;
+
+    @include phone {
+      margin-bottom: 15px;
+    }
   }
 
   &__box {
     display: flex;
     justify-content: center;
+
+    @include phone {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__confidentiality {
+    margin-right: 20px;color: #fff;
+
+    @include phone {
+      margin-right: 0;
+    }
+  }
+
+  &__term-of-use {
+    color: #fff;
   }
 }

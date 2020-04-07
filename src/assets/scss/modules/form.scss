@@ -75,5 +75,17 @@
     font-size: 20px;
     font-weight: 700;
     color: #fff;
+
+    @include phone {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include phone {
+        display: block;
+      }
+    }
   }
 }
