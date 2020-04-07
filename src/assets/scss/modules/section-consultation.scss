@@ -3,9 +3,17 @@
 .consultation {
   padding-bottom: 102px;
 
+  @include tablet {
+    padding-bottom: 48px;
+  }
+
   &__content {
     display: flex;
-    padding-top: 47px
+    padding-top: 47px;
+
+    @include phone {
+      padding-top: 24px;
+    }
   }
 
   &__form {

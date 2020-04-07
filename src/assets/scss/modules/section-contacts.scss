@@ -8,6 +8,11 @@
     padding-top: 48px;
     display: flex;
     justify-content: space-between;
+
+    @include phone {
+      flex-direction: column;
+      padding-top: 24px;
+    }
   }
 
   &__information {
@@ -16,30 +21,40 @@
     justify-content: space-between;
     font-size: rem(24);
     width: 50%;
+
+    @include phone {
+      width: 100%;
+      margin-bottom: 25px;
+    }
   }
 
   &__adress span {
     font-weight: 700;
+    font-size: 24px;
   }
 
   &__phone span {
     font-weight: 700;
+    font-size: 24px;
   }
 
   &__worktime span {
     font-weight: 700;
+    font-size: 24px;
   }
 
   &__mail span {
     font-weight: 700;
+    font-size: 24px;
   }
 
   &__socials span {
     font-weight: 700;
+    font-size: 24px;
   }
 
   &__socials-link {
-    margin-right: 10px;
+    margin-right: 4px;
   }
 
   &__map-box {
@@ -47,6 +62,10 @@
     position: relative;
     border-radius: 10px;
     width: 48%;
+
+    @include phone {
+      width: 100%;
+    }
 
     &:after {
       content: url("/assets/img/dots-purple.svg");

@@ -4,8 +4,14 @@
   padding-top: 70px;
   padding-bottom: 70px;
 
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 48px;
+  }
+
   @include phone {
     padding-top: 0;
+    padding-bottom: 48px;
   }
 
   &__title {
@@ -14,6 +20,7 @@
 
     @include phone {
       margin-top: 24px;
+      padding-left: 4%;
     }
   }
 
@@ -27,6 +34,13 @@
     justify-content: space-between;
     margin-top: 25px;
     position: relative;
+
+    @include phone {
+      flex-wrap: nowrap;
+      overflow: hidden;
+      padding-right: 4%;
+      padding-left: 4%;
+    }
 
     &:first-child {
       &:after {
@@ -58,7 +72,7 @@
   }
 
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     padding: 24px;
     width: 590px;
     min-height: 280px;
@@ -75,8 +89,14 @@
     }
 
     @include phone {
-      width: 100%;
+      min-width: 100%;
+      margin-right: 25px;
+      //overflow: hidden;
     }
+  }
+
+  &__slider-window {
+    overflow: hidden;
   }
 
   &__item-header {
@@ -105,9 +125,9 @@
     font-weight: 700;
     font-size: rem(18);
 
-    @include phone {
+    @include tablet {
       position: absolute;
-      top: 50px;
+      top: 54px;
       right: 24px;
     }
   }
@@ -115,7 +135,7 @@
   &__item-content {
     display: flex;
 
-    @include phone {
+    @include tablet {
       flex-direction: column;
     }
   }
@@ -124,7 +144,7 @@
     width: 100%;
     margin-right: 30px;
 
-    @include phone {
+    @include tablet {
       max-width: 90px;
     }
   }
@@ -135,8 +155,11 @@
     justify-content: space-between;
   }
 
-  &__item-text {
+  &__item-desc-text {
 
+    @include tablet {
+      margin-top: 10px;
+    }
   }
 
   &__item-desc-btns {
@@ -169,5 +192,34 @@
 
   &__button-details {
     padding: 8px 15px 8px 0;
+  }
+
+  &__slider-controls {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      background-color: #8484FC;
+      border-radius: 50%;
+      top: 27px;
+    }
+  }
+
+  &__button-prev-pic {
+    transform: rotate(180deg);
+  }
+
+  &__button-prev {
+    margin-right: 20px;
+  }
+
+  &__button-next {
+    margin-left: 20px;
   }
 }
