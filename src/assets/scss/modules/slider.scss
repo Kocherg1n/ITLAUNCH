@@ -9,6 +9,10 @@
     flex-direction: column-reverse;
   }
 
+  @include phone {
+    display: none;
+  }
+
   &__title {
     font-size: rem(24);
     font-weight: 700;
@@ -89,6 +93,11 @@
     overflow: hidden;
     min-width: 450px;
     margin-right: 25px;
+
+    @include tablet {
+      min-width: 350px;
+      margin-right: 10px;
+    }
   }
 
   &__picture-title {

@@ -80,8 +80,12 @@
 
   &__item-title {
     font-weight: 700;
-    font-size: rem(18);
+    font-size: 18px;
     margin-bottom: 35px;
+
+    @include laptop {
+      font-size: 22px;
+    }
 
     @include tablet {
       font-size: 20px;
@@ -113,14 +117,15 @@
   }
 
   &__item-desc {
+    font-size: 18px;
 
     @include tablet {
-      font-size: 18px;
+      font-size: 17px;
     }
 
     @include phone {
-      width: 80%;
-      font-size: 14px;
+      width: 75%;
+      font-size: 15px;
       margin-left: 14px;
     }
   }

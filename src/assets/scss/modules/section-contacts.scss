@@ -4,10 +4,19 @@
 
   padding-bottom: 100px;
 
+  @include phone {
+    padding-bottom: 48px;
+  }
+
   &__content {
     padding-top: 48px;
     display: flex;
     justify-content: space-between;
+
+    @include laptop {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     @include phone {
       flex-direction: column;
@@ -21,6 +30,11 @@
     justify-content: space-between;
     font-size: rem(24);
     width: 55%;
+
+    @include laptop {
+      width: 100%;
+      margin-top: 30px;
+    }
 
     @include phone {
       width: 100%;
@@ -133,6 +147,10 @@
     border-radius: 10px;
     width: 45%;
 
+    @include laptop {
+      width: 100%;
+    }
+
     @include phone {
       width: 100%;
       margin-top: 30px;
@@ -160,16 +178,6 @@
       @include laptop {
         display: none;
       }
-
-      //@include phone {
-      //  content: url("/assets/img/icons/dots-map.svg");
-      //  display: block;
-      //  position: absolute;
-      //  bottom: -37px;
-      //  left: -37px;
-      //  width: 100%;
-      //  height: 100%;
-      //}
     }
   }
 
@@ -177,7 +185,7 @@
     overflow: hidden;
     width: 100%;
     border-radius: 10px;
-    height: 220px;
+    height: 100%;
     position: relative;
     z-index: 30;
   }
