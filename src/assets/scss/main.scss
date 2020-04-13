@@ -1,9 +1,12 @@
+// Utils
 @import "utils/vars";
 @import "utils/fonts";
 @import "utils/media";
 @import "utils/mixins";
 @import "utils/layout";
 @import "utils/reset";
+@import "utils/slick-carousel/slick";
+//@import "utils/slick-carousel/slick-theme";
 
 
 // Modules
@@ -19,3 +22,4 @@
 @import "modules/section-contacts";
 @import "modules/footer";
 @import "modules/hamburger";
+@import "modules/site-create-carousel";

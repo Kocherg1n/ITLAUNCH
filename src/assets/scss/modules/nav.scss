@@ -5,6 +5,11 @@
 
   &__list {
     display: flex;
+
+    @include tablet {
+      justify-content: space-between;
+      margin-left: 70px;
+    }
   }
 
   &__item {
@@ -13,5 +18,10 @@
 
   &__link {
     font-size: rem(18);
+    color: #000000;
+
+    @include tablet {
+      font-size: 18px;
+    }
   }
 }

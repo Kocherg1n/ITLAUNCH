@@ -1,0 +1,43 @@
+.slick-slide {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.slick-list {
+  position: relative;
+  padding-bottom: 10px;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: #1F51EE;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.slick-arrow {
+  font-size: 0;
+  width: 45px;
+  height: 45px;
+  bottom: -18px;
+}
+
+.slick-arrow.slick-prev {
+  background: url("/assets/img/icons/right.svg");
+  transform: rotate(180deg);
+  position: absolute;
+  left: 30%;
+  z-index: 10;
+}
+
+.slick-arrow.slick-next {
+  background: url("/assets/img/icons/right.svg");
+  position: absolute;
+  right: 30%;
+}

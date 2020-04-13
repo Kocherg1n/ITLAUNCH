@@ -33,7 +33,7 @@
   &__phone {
     font-weight: 700;
 
-    @include phone {
+    @include tablet {
       display: none;
     }
   }
