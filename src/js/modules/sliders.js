@@ -26,6 +26,5 @@ $(document).ready(function () {
 clientWidth <= 480 ? sitePromotionCarousel.classList.add('site-promotion-carousel') : siteCreateCarousel.classList.remove('site-promotion-carousel');
 
 
-
 // ========== Слайдер "Проекты" (мобильная версия)
 

@@ -130,6 +130,11 @@
     border-radius: 5px;
     min-width: 280px;
 
+    @include laptop {
+      font-size: 14px;
+      min-width: 240px;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }

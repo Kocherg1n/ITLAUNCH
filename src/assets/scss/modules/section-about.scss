@@ -6,7 +6,6 @@
   position: relative;
   overflow: hidden;
 
-
   @include phone {
     padding-top: 80px;
   }
@@ -42,7 +41,7 @@
       right: 0;
       bottom: 0;
       border-radius: 50%;
-      background: linear-gradient(180deg, rgba(2,0,36,1) 10%, rgba(122,122,236,1) 20%, rgba(132,132,252,0.1) 40%, rgba(0,212,255,1) 100%);
+      background: linear-gradient(180deg, rgba(2, 0, 36, 1) 10%, rgba(122, 122, 236, 1) 20%, rgba(132, 132, 252, 0.1) 40%, rgba(0, 212, 255, 1) 100%);
     }
   }
 
@@ -50,6 +49,10 @@
     font-size: rem(80);
     color: black;
     @include Gilroy;
+
+    @include phone-m {
+      font-size: 50px;
+    }
   }
 
   &__description {
@@ -72,6 +75,12 @@
 
   &__btn {
     margin-top: 16px;
+
+    @include phone {
+      position: absolute;
+      bottom: 30px;
+      width: 92%;
+    }
   }
 
   &__button {
@@ -84,7 +93,7 @@
 
     @include phone {
       width: 100%;
-      margin-top: 190px;
+      //margin-top: 190px;
       font-size: 20px;
     }
   }
@@ -113,9 +122,13 @@
     top: 470px;
     z-index: 10;
 
-    @include phone{
+    @include phone {
       left: -28px;
       top: 340px;
+    }
+
+    @include phone-m {
+      top: 290px;
     }
   }
 
@@ -124,9 +137,13 @@
     left: 30px;
     top: 610px;
 
-    @include phone{
+    @include phone {
       left: -30px;
       top: 480px;
+    }
+
+    @include phone-m {
+      top: 424px;
     }
   }
 
@@ -136,9 +153,13 @@
     top: 580px;
     z-index: 10;
 
-    @include phone{
+    @include phone {
       left: 60px;
       top: 445px;
+    }
+
+    @include phone-m {
+      top: 390px;
     }
   }
 
@@ -148,9 +169,13 @@
     top: 540px;
     z-index: 10;
 
-    @include phone{
+    @include phone {
       left: 100px;
       top: 410px;
+    }
+
+    @include phone-m {
+      top: 360px;
     }
   }
 }

@@ -21,3 +21,9 @@
     @content;
   }
 }
+
+@mixin phone-m {
+  @media screen and (max-width: $phones-m) {
+    @content;
+  }
+}
